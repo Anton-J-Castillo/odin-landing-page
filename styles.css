@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: darkslateblue;
+    flex: 1.5 1 0%;
+}
+
+main {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    background-color: aqua;
+    flex: 3.5 1 0%;
+}
+
+main section {
+    flex: 1;
+    background-color: aquamarine;
+    border: 5px solid black
+}
+
+footer {
+    background-color: bisque;
+    flex: 0.5 1 0%;
+}
