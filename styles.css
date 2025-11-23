@@ -4,7 +4,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 100vh;
+  height: 140vh;
   width: 100vw;
 }
 
@@ -60,7 +60,7 @@ main {
 }
 
 main #homepage {
-  height: 25%;
+  height: 20%;
   width: 100%;
   background-color: hsl(240, 5%, 15%);
   display: flex;
@@ -70,7 +70,6 @@ main #homepage {
 main #homepage div {
   height: 90%;
   width: 90%;
-  background-color: hsl(240, 5%, 24%);
   color: white;
   display: flex;
   align-items: center;
@@ -84,20 +83,184 @@ main #homepage div {
   align-items: start;
   width: 50%;
   padding: 20px;
+  border-radius: 8px;
   background-color: hsl(240, 5%, 30%);
 }
 
 #homepage .image {
   width: 35%;
+  border-radius: 8px;
   background-color: hsl(240, 5%, 30%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image .pfp {
-}
-
 #homepage .name {
   font-size: 2em;
+}
+
+main #skills {
+  height: 30%;
+  width: 100%;
+  background-color: hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #skills div {
+  height: 90%;
+  color: black;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+#skills .skills-container {
+  width: 40%; /* Increased width to give more room */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 8px;
+  padding-bottom: 15px;
+}
+
+.skills-container .skill {
+  display: flex;
+  flex-direction: column; /* Stack box and caption vertically */
+  align-items: center;
+  gap: 8px; /* Space between box and caption */
+}
+
+.skill .skill-box {
+  border: 2px solid blue;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 8px;
+  aspect-ratio: 1 / 1; /* Makes it a perfect square */
+  width: 120px; /* Set your desired size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill .skill-info {
+  font-size: 0.7em;
+  color: hsl(0, 0%, 80%);
+}
+
+#skills .skills-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+main #quote {
+  height: 25%;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote .quote-container {
+  height: 90%; /* Match the pattern from your other sections */
+  width: 40%; /* Add width - it was missing! */
+  display: flex;
+  flex-direction: column; /* Stack quote and author vertically */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between quote and author */
+  padding: 20px; /* Add some padding */
+  border-radius: 8px; /* Optional: matches your other sections */
+}
+
+.quote-container .quote-text {
+  text-align: left;
+  font-size: 1.4em;
+}
+
+.quote-container .author {
+  padding-left: 80%;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+main #contact {
+  height: 25%;
+  width: 100%;
+  background-color: hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .container {
+  background-color: hsl(207, 100%, 70%);
+  height: 50%;
+  width: 50%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact .container .contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#contact .contact-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#contact .contact-info {
+  font-size: 0.9em;
+  color: hsl(0, 0%, 85%);
+}
+
+#contact .btn-container {
+  height: 35%;
+  width: 15%;
+  background-color: hsl(207, 100%, 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+#contact .btn-container button {
+  border: none;
+  background-color: hsl(207, 100%, 85%);
+  height: 100%;
+  padding: 10px;
+}
+
+footer {
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 10%);
+}
+
+footer p {
+  color: hsl(0, 0%, 85%);
 }
